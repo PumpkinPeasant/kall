@@ -1,6 +1,7 @@
 <template>
-  <Table/>
+  <Table :variab="hello"/>
 </template>
+
 <script lang="ts" setup>
 import Table from "~/components/Table.vue";
 
@@ -13,6 +14,14 @@ type TableData = {
   roi: number,
   profit: number,
 }[]
+
+const hello = 'chlen'
+
+
+
+useHead({
+  titleTemplate: 'Home | %s'
+})
 
 const data = [
   {

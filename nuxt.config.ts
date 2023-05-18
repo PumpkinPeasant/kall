@@ -19,5 +19,22 @@ export default defineNuxtConfig({
             // treeshaking: true,
             // styles: 'sass'
         },
+    },
+    app: {
+        head: {
+            title: 'Steam Trade Desk',
+            meta: [
+                {
+                    name: 'description',
+                    content: 'Trade table for Steam in-game items'
+                }
+            ],
+            link: [
+                {
+                    rel: 'stylesheet',
+                    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+                }
+            ]
+        },
     }
 })
